@@ -2,7 +2,7 @@
 <div align='center'>
 
 <h1>GuwenEE</h1>
-<h3>古汉语事件抽取语料库</h3>
+<h3>A Corpus for Event Extraction in Classical Chinese</h3>
 
 
 ------
@@ -19,19 +19,17 @@
 
 </div>
 
+> [查看中文文档](README.md)
 
-> If you want to read this instruction in English, please click [here](README.en.md).
-
-
-本仓库是古汉语事件抽取的语料库GuwenEE及其基准测评代码库。
+This warehouse is a corpus of ancient Chinese event extraction, GuwenEE, and its benchmark evaluation code.
 
 
-# 语料库介绍
-本语料库是一个古汉语领域事件抽取语料库，原始数据来自《二十四史》，从中随机抽取部分句子作为标注语料，通过大规模语言模型与人工相结合的方式构建。
-包含古汉语句子1000条，7个事件类别（一个分类），72个事件类型（二级分类），1928 个事件。
-本语料库构建的事件类型如下：
+# Introduction of the Corpus
+This corpus is an event extraction corpus for the field of ancient Chinese, with raw data from the "Twenty Four Histories". Some sentences are randomly selected as annotated corpus, and constructed through a combination of large-scale language models and artificial methods.
+Contains 1000 ancient Chinese sentences, 7 event type (firstly classification), 72 event types (secondary classification), and 1928 events.
+The event types constructed by this corpus are as follows:
 
-|事件类别|事件类型|
+|firstly classification|secondary classification|
 |--|--|
 |事件类别|事件类型|
 |人生|出生,婚嫁,死亡,继承,高中|......|
@@ -42,55 +40,58 @@
 |文化|历史记载,撰写事件,......|
 |地理|地震,海汛,流星雨,......|
 
-# 语料库下载
-本语料库提供标注结果和事件Schema,您可以在本仓库中[Releases](https://github.cong/Lyn4ever29/GuwenEE/releases)中下载
+# Download the Corpus 
+This corpus provides annotation results and event schemas,
+you can find and download in [Releases](https://github.cong/Lyn4ever29/GuwenEE/releases)
 
-# 测评实验运行
-## 实验设计
-使用4个在古汉语领域的预训练模型在事件抽取的子任务上进行实验。
-* 事件抽取任务
-  * 事件识别(Event Detection,ED)
-  * 事件元素提取(EventArgument Extraction,EAE)
-* 选用的模型：
+
+# Run Evaluation Experiment
+## The design of Experiment
+we Experiment on the subtask of event extraction 
+we used four pre-trained language models in the field of ancient Chines,
+* Event Extraction
+  * Event Detection,abbreviated as ED
+  * EventArgument Extraction,abbreviated as EAE
+* we used the follow models：
   * [guwenbert-base](https://huggingface.co/ethanyt/guwenbert-base)
   * [roberta-clas-sical-chinese-base](https://huggingface.co/KoichiYasuoka/roberta-clas-sical-chinese-base-char)
   * [sikubert](https://huggingface.co/sikubert)
   * [sikuroberta](https://huggingface.co/sikuroberta)
 
-## 安装环境
-运行本仓库代码，需要Python 3.9+,Pytorch 1.12.1+,transform 4.21.0+ 
+## Preparation environment
+If you want to run this code in your machine,you need Python 3.9+,Pytorch 1.12.1+,transform 4.21.0+ 
 ```shell
 pip install -r requirements.txt 
 ```
 
-## 数据处理
+## Data Processing
 ```shell
 python data/data_processed.py \
     --data_dir ./original \
     --save_dir ./processed
 ```
-## 修改配置文件
-项目配置文件在[config](./config)目录下，其中包含各个模型的相关配置，您可以根据自己的需要修改。更多内容，请参考[OmniEvent](https://github.com/THU-KEG/OmniEvent)
+## Modify configuration file
+The project configuration file is located in the [config](./config) directory, which contains the relevant configurations for each model. You can modify it according to your own needs. 
+For more information, please refer to [OmniEvent](https://github.com/THU-KEG/OmniEvent)
 
-
-## 模型下载
-
-本文所用预训练模型来自于[huggingface](https://huggingface.co/),请将模型下载到本地加载使用,下载到本地```model```目录下
+## Download Models
+The models we used are from [huggingface](https://huggingface.co/),
+you can download them,and save to the  file directory named ```model```
 * [guwenbert-base](https://huggingface.co/ethanyt/guwenbert-base)
 * [roberta-clas-sical-chinese-base](https://huggingface.co/KoichiYasuoka/roberta-clas-sical-chinese-base-char)
 * [sikubert](https://huggingface.co/sikubert)
 * [sikuroberta](https://huggingface.co/sikuroberta)
 
-## 运行ED序列标注任务
+## Run ED sequence annotation 
 ```shell
 python ./scripts/ED/sequence_labeling.py ../config/ED/sikubert/guwenee.yaml
 ```
-##  运行EAE序列标注任务
+##  Run EAE sequence annotation 
 ```shell
 python ./scripts/ED/sequence_labeling.py ../config/ED/sikubert/guwenee.yaml
 ```
 
-## 实验测评结果
+## Experimental result
 <table style="height: 340px;" width="707">
 <tbody>
 <tr>
@@ -148,7 +149,7 @@ python ./scripts/ED/sequence_labeling.py ../config/ED/sikubert/guwenee.yaml
 </tbody>
 </table>
 
-# 附录
-本仓库代码使用的开源框架如下,在此感谢他们在相关开源工作中的贡献。
-*   [古汉语分词器jiayan](https://github.com/jiaeyan/Jiayan)
-*   清华事件抽取开源框架[OmniEvent](https://github.com/THU-KEG/OmniEvent)
+# Appendix
+The open source framework used in this repository code is as follows. We would like to express our gratitude for their contributions in the relevant open source work.
+*   [jiayan](https://github.com/jiaeyan/Jiayan),a professional Python NLP tool for Classical Chinese.
+*   [OmniEvent](https://github.com/THU-KEG/OmniEvent),a powerful open-source toolkit for event extraction, including event detection and event argument extraction. 
