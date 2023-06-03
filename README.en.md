@@ -31,14 +31,75 @@ The event types constructed by this corpus are as follows:
 
 |firstly classification|secondary classification|
 |--|--|
-|事件类别|事件类型|
-|人生|出生,婚嫁,死亡,继承,高中|......|
-|战争|起兵事件,进攻事件,出征事件|围攻事件,......|
-|政治|推举事件,诬陷事件,叛变事件|诏谕事件,......|
-|民事|迁徙事件,宗教事件,射箭事件|其他事件,......|
-|日常|会见事件,交谈事件,出行事件|谴责事件,......|
+|人生|出生,婚嫁,死亡,继承,高中,......|
+|战争|起兵事件,进攻事件,出征事件,围攻事件,......|
+|政治|推举事件,诬陷事件,叛变事件,诏谕事件,......|
+|民事|迁徙事件,宗教事件,射箭事件,其他事件,......|
+|日常|会见事件,交谈事件,出行事件,谴责事件,......|
 |文化|历史记载,撰写事件,......|
 |地理|地震,海汛,流星雨,......|
+
+An example from the corpus is as follows:
+```json
+{
+    "text": "十二月己未，突厥复攻茹茹，茹茹举国南奔。",
+    "id": "c255a834c06e459d8be4b88d01c347aa",
+    "event_list": [
+        {
+            "event_type": "战争/进攻事件",
+            "trigger": "攻",
+            "trigger_start_index": 9,
+            "arguments": [
+                {
+                    "argument_start_index": 0,
+                    "role": "时间",
+                    "argument": "十二月己未",
+                    "alias": []
+                },
+                {
+                    "argument_start_index": 10,
+                    "role": "被攻击者",
+                    "argument": "茹茹",
+                    "alias": []
+                },
+                {
+                    "argument_start_index": 6,
+                    "role": "进攻者",
+                    "argument": "突厥",
+                    "alias": []
+                }
+            ],
+            "class": "战争"
+        },
+        {
+            "event_type": "战争/逃逸事件",
+            "trigger": "奔",
+            "trigger_start_index": 18,
+            "arguments": [
+                {
+                    "argument_start_index": 0,
+                    "role": "时间",
+                    "argument": "十二月己未",
+                    "alias": []
+                },
+                {
+                    "argument_start_index": 17,
+                    "role": "地点",
+                    "argument": "南",
+                    "alias": []
+                },
+                {
+                    "argument_start_index": 13,
+                    "role": "逃逸者",
+                    "argument": "茹茹举国",
+                    "alias": []
+                }
+            ],
+            "class": "战争"
+        }
+    ]
+}
+```
 
 # Download the Corpus 
 This corpus provides annotation results and event schemas,
