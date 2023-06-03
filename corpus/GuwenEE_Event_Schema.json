@@ -1,0 +1,72 @@
+{"event_type": "人生/出生", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "地点"}], "id": "d7e7a1bed8624d378ae503fa1a98fd98", "class": "人生"}
+{"event_type": "人生/婚嫁", "role_list": [{"role": "男方"}, {"role": "时间"}, {"role": "女方"}], "id": "1590ab611ce24c179f1d92cdb487f993", "class": "人生"}
+{"event_type": "人生/死亡", "role_list": [{"role": "人物"}, {"role": "地点"}, {"role": "结果"}, {"role": "原因"}, {"role": "时间"}, {"role": "职位"}], "id": "f8f28830d4434c50934ec623b522e573", "class": "人生"}
+{"event_type": "人生/继承", "role_list": [{"role": "继承人"}, {"role": "继承内容"}], "id": "441e3fa0ab09474589d2e34b28ad7559", "class": "人生"}
+{"event_type": "人生/高中", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "名次"}], "id": "e2d52b707ac24946b796d36e0257c16b", "class": "人生"}
+{"event_type": "人生/辞官", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "原因"}], "id": "9759a5e5f32348b3a165f14ce9fde959", "class": "人生"}
+{"event_type": "战争/起兵事件", "role_list": [{"role": "人物"}, {"role": "防守方"}, {"role": "进攻方"}, {"role": "地点"}, {"role": "结果"}, {"role": "动作"}, {"role": "原因"}, {"role": "时间"}], "id": "1178dfeacd714085af99c12c0fa3c190", "class": "战争"}
+{"event_type": "战争/进攻事件", "role_list": [{"role": "防守方"}, {"role": "进攻方"}, {"role": "被攻击者"}, {"role": "地点"}, {"role": "结果"}, {"role": "时间"}, {"role": "战争结果"}, {"role": "进攻者"}], "id": "3fb18aad5e524e6a82461a9d691d7ae5", "class": "战争"}
+{"event_type": "战争/出征事件", "role_list": [{"role": "目的"}, {"role": "出征人"}, {"role": "地点"}, {"role": "目的地"}, {"role": "时间"}, {"role": "出发点"}], "id": "5b3fb7c84e3c4b66936f4fd021ff7e11", "class": "战争"}
+{"event_type": "战争/受降事件", "role_list": [{"role": "投降地点"}, {"role": "时间"}, {"role": "受降者"}, {"role": "投降者"}], "id": "f99a9c06b3f54a0a9276a6ff7c87a10d", "class": "战争"}
+{"event_type": "战争/刺杀事件", "role_list": [{"role": "目的"}, {"role": "刺杀者"}, {"role": "被害人"}, {"role": "原因"}, {"role": "时间"}], "id": "bb98a42057e34d779f09cd5b7e43948f", "class": "战争"}
+{"event_type": "战争/追击事件", "role_list": [{"role": "追击者"}, {"role": "被追击者"}, {"role": "地点"}], "id": "62a27840585c4dc5b247a2adb94d7413", "class": "战争"}
+{"event_type": "战争/伏击事件", "role_list": [{"role": "埋伏者"}, {"role": "被埋伏者"}, {"role": "结果"}, {"role": "地点"}, {"role": "时间"}], "id": "7939235675c14f9ea226f014728b38cd", "class": "战争"}
+{"event_type": "战争/投奔事件", "role_list": [{"role": "时间"}, {"role": "投奔于"}, {"role": "人物"}, {"role": "地点"}], "id": "c6bf70bd7692450d85473761346449aa", "class": "战争"}
+{"event_type": "战争/调兵事件", "role_list": [{"role": "目的"}, {"role": "调兵于"}, {"role": "调兵人"}, {"role": "地点"}, {"role": "所调士兵"}, {"role": "时间"}], "id": "147e5e00766247f5853823871926d76a", "class": "战争"}
+{"event_type": "战争/逃逸事件", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "逃逸者"}, {"role": "地点"}], "id": "7305650444fd4f269f0416696532b01f", "class": "战争"}
+{"event_type": "战争/劫持事件", "role_list": [{"role": "目的地"}, {"role": "时间"}, {"role": "被劫持人"}, {"role": "劫持人"}], "id": "5a4f8c6f44a848a2be0a04477545552b", "class": "战争"}
+{"event_type": "战争/防守事件", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "地点"}], "id": "c2c6df6fcd494a43bec941cb942cb7d9", "class": "战争"}
+{"event_type": "战争/战败事件", "role_list": [{"role": "地点"}, {"role": "结果"}, {"role": "时间"}, {"role": "失败者"}, {"role": "胜利者"}], "id": "b1562ef74fe3488ba2b3004ea02bcf08", "class": "战争"}
+{"event_type": "战争/驻扎事件", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "地点"}], "id": "e6c5faa639f344d8bf542046b254927c", "class": "战争"}
+{"event_type": "战争/围攻事件", "role_list": [{"role": "地点"}, {"role": "被围者"}, {"role": "包围者"}, {"role": "原因"}, {"role": "时间"}], "id": "e6b05b597fa24fca810a6905d6e3862c", "class": "战争"}
+{"event_type": "政治/推举事件", "role_list": [{"role": "推荐原因"}, {"role": "推荐职位"}, {"role": "被推荐人"}, {"role": "推荐人"}, {"role": "时间"}], "id": "8ea4f9d99e2742f6ac434d1d75298baa", "class": "政治"}
+{"event_type": "政治/登基事件", "role_list": [{"role": "时间"}, {"role": "登基人"}, {"role": "地点"}], "id": "8e9ae9431cf34543a3805370c134711d", "class": "政治"}
+{"event_type": "政治/任职管辖", "role_list": [{"role": "人物"}, {"role": "地点"}, {"role": "内容"}, {"role": "时间"}, {"role": "职位"}], "id": "052d7c912c364b73aa0f919c9b1f3e98", "class": "政治"}
+{"event_type": "政治/派遣事件", "role_list": [{"role": "人物"}, {"role": "命令者"}, {"role": "行为"}, {"role": "派遣人"}, {"role": "接受者"}, {"role": "原因"}, {"role": "事件名称"}, {"role": "时间"}, {"role": "主语"}], "id": "2da7d6709011479bb00624da885b2324", "class": "政治"}
+{"event_type": "政治/充军事件", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "地点"}, {"role": "原因"}], "id": "066786a399184a08aa4efac755a2b236", "class": "政治"}
+{"event_type": "政治/诏谕事件", "role_list": [{"role": "人物"}, {"role": "受听人"}, {"role": "动作"}, {"role": "内容"}, {"role": "发昭人"}, {"role": "时间"}, {"role": "昭谕人"}], "id": "e1554d5102f1464f975f60a6ac2bad1e", "class": "政治"}
+{"event_type": "政治/分封事件", "role_list": [{"role": "地点"}, {"role": "受封内容"}, {"role": "封赏人"}, {"role": "时间"}, {"role": "受封者"}], "id": "5aa98930ae0049d1a96d1b42ac33bf97", "class": "政治"}
+{"event_type": "政治/任命事件", "role_list": [{"role": "被任命人"}, {"role": "行为"}, {"role": "任命人"}, {"role": "内容"}, {"role": "时间"}, {"role": "职位"}], "id": "f1b4e6fb0c7349bda58d073363cd2935", "class": "政治"}
+{"event_type": "政治/免税事件", "role_list": [{"role": "税种"}, {"role": "时间"}, {"role": "免税地点"}, {"role": "免税年限"}], "id": "ff8f6186592b42e1947ce51f0bdc2bb2", "class": "政治"}
+{"event_type": "政治/贿赂事件", "role_list": [{"role": "诉求"}, {"role": "受贿人"}, {"role": "贿赂人"}], "id": "6cf5b5ae87774271b00fc01ab0908dc8", "class": "政治"}
+{"event_type": "政治/赏赐事件", "role_list": [{"role": "受赏人职位"}, {"role": "赏赐内容"}, {"role": "受赏人"}, {"role": "时间"}, {"role": "赏赐人"}], "id": "b56d028e84bb4b3d9955b9b57f2f97d5", "class": "政治"}
+{"event_type": "政治/贡献事件", "role_list": [{"role": "时间"}, {"role": "贡献方"}, {"role": "地点"}, {"role": "贡献物"}], "id": "990b13605b2d4b54a83c20aa3aad1905", "class": "政治"}
+{"event_type": "政治/罢免事件", "role_list": [{"role": "人物"}, {"role": "地点"}, {"role": "结果"}, {"role": "动作"}, {"role": "内容"}, {"role": "原因"}, {"role": "时间"}, {"role": "职位"}], "id": "e2f389bac5bf41ad89651f7750655840", "class": "政治"}
+{"event_type": "政治/赈灾事件", "role_list": [{"role": "灾害"}, {"role": "被救济人"}, {"role": "地点"}, {"role": "救济物"}, {"role": "时间"}], "id": "aba8124d74234de8b7bbbc9a6a344a7a", "class": "政治"}
+{"event_type": "政治/赦免事件", "role_list": [{"role": "时间"}, {"role": "赦免对象"}], "id": "3faabe962783468fa2b38102ecd660c7", "class": "政治"}
+{"event_type": "政治/奏请事件", "role_list": [{"role": "人物"}, {"role": "凑请人"}, {"role": "地点"}, {"role": "动作"}, {"role": "内容"}, {"role": "时间"}], "id": "3b2b9733816745f980359a12ec4fd905", "class": "政治"}
+{"event_type": "政治/迁官事件", "role_list": [{"role": "人物"}, {"role": "原职位"}, {"role": "结果"}, {"role": "时间"}, {"role": "现职位"}], "id": "db4ca2efb3524f6fafec7b6453224205", "class": "政治"}
+{"event_type": "政治/出使事件", "role_list": [{"role": "目的地"}, {"role": "时间"}, {"role": "出使人"}], "id": "7fb98086bbcc46058e8814ea2f2e3ec8", "class": "政治"}
+{"event_type": "政治/追封事件", "role_list": [{"role": "被追封人"}, {"role": "时间"}, {"role": "追封内容"}, {"role": "追封人"}], "id": "aa682b60eb4049f3b7dc68409f893826", "class": "政治"}
+{"event_type": "政治/抓捕事件", "role_list": [{"role": "时间"}, {"role": "逮捕人"}, {"role": "结果"}, {"role": "被逮捕人"}], "id": "b03648c8f2364f0d84a8112272564206", "class": "政治"}
+{"event_type": "政治/囚禁事件", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "罪名"}, {"role": "地点"}], "id": "162e808871ef471499671a9addcc296e", "class": "政治"}
+{"event_type": "政治/监督事件", "role_list": [{"role": "被监督人"}, {"role": "监督人"}, {"role": "行为"}], "id": "cf9baaa010854c0b9d21ae97b9ba7e8a", "class": "政治"}
+{"event_type": "政治/判案事件", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "案件"}, {"role": "结果"}], "id": "a60951bda2634222a5032f832d41060b", "class": "政治"}
+{"event_type": "政治/诬陷事件", "role_list": [{"role": "时间"}, {"role": "诬陷人"}, {"role": "被诬陷人"}, {"role": "行为"}], "id": "c98e9e0d999c45b990e553567ac57311", "class": "政治"}
+{"event_type": "政治/叛变事件", "role_list": [{"role": "人物"}], "id": "5aa7ff08fc5348d594e9d2a8d1d38a72", "class": "政治"}
+{"event_type": "政治/阅兵事件", "role_list": [{"role": "时间"}, {"role": "地点"}, {"role": "兵种"}], "id": "557abb07b39b41a2921931709981ad7b", "class": "政治"}
+{"event_type": "民事/迁徙事件", "role_list": [{"role": "目的地"}, {"role": "时间"}, {"role": "参与人"}, {"role": "出发地"}], "id": "c110e07360d741fda3ec728d7c25fe0a", "class": "民事"}
+{"event_type": "民事/宗教事件", "role_list": [{"role": "祭祀人"}, {"role": "宗教"}, {"role": "地点"}, {"role": "时间"}, {"role": "事件"}], "id": "5e76c37e12ca4c9983ec9f2f634f2bc9", "class": "民事"}
+{"event_type": "民事/射箭事件", "role_list": [{"role": "射箭人"}, {"role": "射击目标"}], "id": "92b271c63385464a8768a21cae70d5d3", "class": "民事"}
+{"event_type": "民事/修建事件", "role_list": [{"role": "修建人"}, {"role": "时间"}, {"role": "修建内容"}, {"role": "地点"}], "id": "f7896f305c8a43a49f42ffa6055860ed", "class": "民事"}
+{"event_type": "民事/欢呼事件", "role_list": [{"role": "欢呼内容"}, {"role": "时间"}, {"role": "地点"}, {"role": "原因"}], "id": "0689b968f0b04f87ab8484c4af349d3c", "class": "民事"}
+{"event_type": "民事/增税事件", "role_list": [{"role": "时间"}, {"role": "内容"}], "id": "93f7c9e87ae646afbc939acdc6eca679", "class": "民事"}
+{"event_type": "民事/其他事件", "role_list": [{"role": "时间"}, {"role": "人物"}, {"role": "地点"}], "id": "8dabcc3e87bb4ae3afed7cf67eba3103", "class": "民事"}
+{"event_type": "日常/会见事件", "role_list": [{"role": "被见人"}, {"role": "会见人"}, {"role": "地点"}, {"role": "时间"}, {"role": "事由"}], "id": "279cfc5684024a47b5f981f4de80ee66", "class": "日常"}
+{"event_type": "日常/交谈事件", "role_list": [{"role": "听话人"}, {"role": "说话人"}, {"role": "说话内容"}, {"role": "时间"}, {"role": "职位"}], "id": "2e541056d3fc4ec0ae7dfdeedca4ccb4", "class": "日常"}
+{"event_type": "日常/出行事件", "role_list": [{"role": "人物"}, {"role": "地点"}, {"role": "目的地"}, {"role": "时间"}, {"role": "出发地"}], "id": "98bbb722c0004e4da01f8b4534f75d87", "class": "日常"}
+{"event_type": "日常/许诺事件", "role_list": [{"role": "许诺人"}, {"role": "事件"}], "id": "b9a70d8cd4cb4dd1ab11f940ff9f82ed", "class": "日常"}
+{"event_type": "日常/跟随事件", "role_list": [{"role": "被跟随人"}, {"role": "时间"}, {"role": "跟随者"}, {"role": "行为"}], "id": "bf29186ed7c44d74a4156335210c6cc3", "class": "日常"}
+{"event_type": "日常/命令事件", "role_list": [{"role": "命令人"}, {"role": "行为"}, {"role": "时间"}, {"role": "命令内容"}, {"role": "被命令人"}, {"role": "职位"}], "id": "681a1290510a44f787a7d66a8bf616c0", "class": "日常"}
+{"event_type": "日常/推辞拒绝", "role_list": [{"role": "被推辞人"}, {"role": "人物"}, {"role": "拒绝内容"}, {"role": "推辞人"}], "id": "0923099c1055479aa2e018baeb141786", "class": "日常"}
+{"event_type": "日常/更名事件", "role_list": [{"role": "原名称"}, {"role": "新名称"}, {"role": "原因"}, {"role": "时间"}, {"role": "类型"}], "id": "46b27e3333ca4ae2bbdb7adb4cafca2e", "class": "日常"}
+{"event_type": "日常/书信事件", "role_list": [{"role": "写信人"}, {"role": "收信人"}, {"role": "内容"}], "id": "ecbe508ca2a6433f88e3071535eb545c", "class": "日常"}
+{"event_type": "日常/埋葬事件", "role_list": [{"role": "埋葬人"}, {"role": "埋葬地点"}], "id": "6229a8fdae8943ab8a049ac5ca3677f5", "class": "日常"}
+{"event_type": "日常/形象描写", "role_list": [{"role": "描写词"}], "id": "e10a451012cb49a788f353851f51c432", "class": "日常"}
+{"event_type": "文化/历史记载", "role_list": [{"role": "记载内容"}, {"role": "著作"}], "id": "9edb88fc584241c28ed4ab4f88e6b5f4", "class": "文化"}
+{"event_type": "文化/撰写事件", "role_list": [{"role": "撰写人"}, {"role": "撰写书名"}, {"role": "原因"}, {"role": "数量"}, {"role": "时间"}], "id": "eee88584eddf4ac48122c841a55bbbe2", "class": "文化"}
+{"event_type": "地理/地震", "role_list": [{"role": "时间"}, {"role": "地点"}, {"role": "结果"}], "id": "42426623341a43a9a8232c671790bc89", "class": "地理"}
+{"event_type": "地理/雷雨風", "role_list": [{"role": "时间"}, {"role": "地点"}, {"role": "结果"}], "id": "e665d15055a24aa187ad058aaea92b6a", "class": "地理"}
+{"event_type": "地理/日食", "role_list": [{"role": "时间"}, {"role": "结果"}], "id": "e33e0a50b3fb4d4d9cb2632f208d227a", "class": "地理"}
+{"event_type": "地理/海汛", "role_list": [{"role": "时间"}, {"role": "地点"}, {"role": "结果"}], "id": "cd79ba7690344314999915e59479826c", "class": "地理"}
+{"event_type": "地理/流星雨", "role_list": [{"role": "形状"}, {"role": "时间"}, {"role": "消失地点"}, {"role": "出现地点"}], "id": "78b772621d01463aba4d2ded2202e034", "class": "地理"}
