@@ -6,7 +6,8 @@ import json
 import logging
 import numpy as np
 
-from transformers import set_seed, EarlyStoppingCallback
+from transformers import EarlyStoppingCallback
+from transformers import  set_seed
 
 from OmniEvent.arguments import DataArguments, ModelArguments, TrainingArguments, ArgumentParser
 from OmniEvent.input_engineering.sequence_labeling_processor import EDSLProcessor

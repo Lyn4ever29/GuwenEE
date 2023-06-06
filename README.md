@@ -1,4 +1,3 @@
-
 <div align='center'>
 
 <h1>GuwenEE</h1>
@@ -23,7 +22,22 @@
 > If you want to read this instruction in English, please click [here](README.en.md).
 
 
+
 本仓库是古汉语事件抽取的语料库GuwenEE及其基准测评代码库。
+
+# 目录
+- [语料库介绍](#语料库介绍)
+- [语料库下载](#语料库下载)
+- [测评实验运行](#测评实验运行)
+  - [实验设计](#实验设计)
+  - [安装环境](#安装环境)
+  - [模型下载](#模型下载)
+    - [jiayan分词器模型](#jiayan分词器模型) 
+    - [古文预训练模型](#古文预训练模型)
+  - [运行ED序列标注任务](#运行ED序列标注任务)
+  - [运行EAE序列标注任务](#运行EAE序列标注任务)
+  - [实验测评结果](#实验测评结果)
+- [附录](#附录)
 
 
 # 语料库介绍
@@ -104,7 +118,7 @@
 ```
 
 # 语料库下载
-本语料库提供标注结果和事件Schema,您可以在本仓库中[Releases](https://github.cong/Lyn4ever29/GuwenEE/releases)中下载
+本语料库提供标注结果和事件Schema,您可以在本仓库中[Releases](https://github.com/Lyn4ever29/GuwenEE/releases)中下载
 
 # 测评实验运行
 ## 实验设计
@@ -123,32 +137,35 @@
 ```shell
 pip install -r requirements.txt 
 ```
-
-## 数据处理
-```shell
-python data/data_processed.py \
-    --data_dir ./original \
-    --save_dir ./processed
-```
-## 修改配置文件
-项目配置文件在[config](./config)目录下，其中包含各个模型的相关配置，您可以根据自己的需要修改。更多内容，请参考[OmniEvent](https://github.com/THU-KEG/OmniEvent)
-
-
 ## 模型下载
+### jiayan分词器模型
+由于项目使用的jiayan分词器需要使用jiayan.klm，请[点击下载](https://github.com/jiaeyan/Jiayan)```jiayan.klm```保存至tools目录下
+> 以上链接来自官方，如无法访问，请提[issue](https://github.com/Lyn4ever29/GuwenEE/issues)给我
 
+### 古文预训练模型
 本文所用预训练模型来自于[huggingface](https://huggingface.co/),请将模型下载到本地加载使用,下载到本地```model```目录下
 * [guwenbert-base](https://huggingface.co/ethanyt/guwenbert-base)
 * [roberta-clas-sical-chinese-base](https://huggingface.co/KoichiYasuoka/roberta-clas-sical-chinese-base-char)
 * [sikubert](https://huggingface.co/sikubert)
 * [sikuroberta](https://huggingface.co/sikuroberta)
 
+## 数据处理
+```shell
+cd data
+python data_processed.py --data_dir ./original  --save_dir ./processed
+```
+## 修改配置文件
+项目配置文件在[config](./config)目录下，其中包含各个模型的相关配置，您可以根据自己的需要修改。更多内容，请参考[OmniEvent](https://github.com/THU-KEG/OmniEvent)
+
+
+
 ## 运行ED序列标注任务
 ```shell
-python ./scripts/ED/sequence_labeling.py ../config/ED/sikubert/guwenee.yaml
+python ./scripts/ED/sequence_labeling.py ../../config/ED/sikubert/guwenee.yaml
 ```
 ##  运行EAE序列标注任务
 ```shell
-python ./scripts/ED/sequence_labeling.py ../config/ED/sikubert/guwenee.yaml
+python ./scripts/ED/sequence_labeling.py ../../config/ED/sikubert/guwenee.yaml
 ```
 
 ## 实验测评结果

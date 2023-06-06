@@ -48,6 +48,7 @@ def split_train_dev(rate):
 
     # copy schema
     shutil.copy("../corpus/GuwenEE_Event_Schema.json", "./original/event_schema.json")
+    shutil.copy("../corpus/GuwenEE_test.json", "./original/test.json")
 
 
 def generate_label2id_role2id(data_path: str) -> None:
@@ -340,4 +341,4 @@ if __name__ == "__main__":
     generate_label2id_role2id(os.path.join(args.data_dir, "event_schema.json"))
     convert_duee_to_unified(os.path.join(args.data_dir, "train.json"))
     convert_duee_to_unified(os.path.join(args.data_dir, "dev.json"))
-    # convert_duee_to_unified(os.path.join(args.data_dir, "duee_test2.json/duee_test2.json"))
+    convert_duee_to_unified(os.path.join(args.data_dir, "test.json"))

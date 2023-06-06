@@ -103,7 +103,7 @@ An example from the corpus is as follows:
 
 # Download the Corpus 
 This corpus provides annotation results and event schemas,
-you can find and download in [Releases](https://github.cong/Lyn4ever29/GuwenEE/releases)
+you can find and download in [Releases](https://github.com/Lyn4ever29/GuwenEE/releases)
 
 
 # Run Evaluation Experiment
@@ -125,6 +125,20 @@ If you want to run this code in your machine,you need Python 3.9+,Pytorch 1.12.1
 pip install -r requirements.txt 
 ```
 
+##  Download Models
+### jiayan Models 
+Download the file named ```jiayan.klm`` from [Here](https://github.com/jiaeyan/Jiayan) and save it to the directory named ```tools```
+> The above link is from the official website. If you are unable to access it, please give me with an [issue](https://github.com/Lyn4ever29/GuwenEE/issues)
+
+### Pre-trained Language Models
+The models we used are from [huggingface](https://huggingface.co/),
+you can download them,and save to the  file directory named ```model```
+* [guwenbert-base](https://huggingface.co/ethanyt/guwenbert-base)
+* [roberta-clas-sical-chinese-base](https://huggingface.co/KoichiYasuoka/roberta-clas-sical-chinese-base-char)
+* [sikubert](https://huggingface.co/sikubert)
+* [sikuroberta](https://huggingface.co/sikuroberta)
+
+
 ## Data Processing
 ```shell
 python data/data_processed.py \
@@ -135,13 +149,6 @@ python data/data_processed.py \
 The project configuration file is located in the [config](./config) directory, which contains the relevant configurations for each model. You can modify it according to your own needs. 
 For more information, please refer to [OmniEvent](https://github.com/THU-KEG/OmniEvent)
 
-## Download Models
-The models we used are from [huggingface](https://huggingface.co/),
-you can download them,and save to the  file directory named ```model```
-* [guwenbert-base](https://huggingface.co/ethanyt/guwenbert-base)
-* [roberta-clas-sical-chinese-base](https://huggingface.co/KoichiYasuoka/roberta-clas-sical-chinese-base-char)
-* [sikubert](https://huggingface.co/sikubert)
-* [sikuroberta](https://huggingface.co/sikuroberta)
 
 ## Run ED sequence annotation 
 ```shell
