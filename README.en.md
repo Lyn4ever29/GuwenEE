@@ -104,6 +104,7 @@ An example from the corpus is as follows:
 # Download the Corpus 
 This corpus provides annotation results and event schemas,
 you can find and download in [Releases](https://github.com/Lyn4ever29/GuwenEE/releases)
+Also you can find download from OPENKG.CN,download from here [GuwenEE：细粒度古汉语事件抽取数据集](http://openkg.cn/dataset/guwenee)
 
 
 # Run Evaluation Experiment
