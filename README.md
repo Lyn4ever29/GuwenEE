@@ -119,6 +119,7 @@
 
 # 语料库下载
 本语料库提供标注结果和事件Schema,您可以在本仓库中[Releases](https://github.com/Lyn4ever29/GuwenEE/releases)中下载
+或者从OPENKG.CN下载[GuwenEE：细粒度古汉语事件抽取数据集](http://openkg.cn/dataset/guwenee)
 
 # 测评实验运行
 ## 实验设计
